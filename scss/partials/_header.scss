@@ -1,0 +1,242 @@
+.header{
+
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 10rem;
+
+    &__fondo{
+
+        height: 3.5rem;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(73, 63, 44);
+        opacity: .85;
+        position: absolute;
+
+        &__centro{
+
+            height: 7.5rem;
+            width: 15rem;
+            margin:auto;    
+            background-color: rgb(0, 0, 0);
+            border-bottom: 3px solid rgb(73, 63, 44);
+            position: relative;
+
+            &::before,&::after{
+
+                content:"";
+                height: 15rem;
+                width: 5.7rem;
+                left: .55rem;
+                bottom: -0.5rem;
+                transform: rotate(45deg);
+                position:absolute;   
+                background-color: rgb(0, 0, 0);
+                border-bottom: 4px solid rgb(73, 63, 44);
+            }
+            &::after{
+
+                left: auto;
+                right: .55rem;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &__menu{
+
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: .8rem .5rem .4rem black;
+        margin: 0 1rem;
+        display: none;
+    }
+    nav{
+
+        display: flex;
+
+        &>ul{
+
+            flex: 2 2 1px;
+            display: flex;
+            align-items:flex-start;
+
+            &>li{
+
+                position: relative;
+
+                &>a{
+
+                    display: block;
+                    padding: .3rem;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-shadow: .8rem .5rem .4rem black;
+                }
+            }
+        }
+    }
+    &__nav-1{
+
+        justify-content: flex-end;
+
+        &>li{
+
+            margin-right: 12%;
+        }
+    }
+    &__nav-2{
+
+        justify-content: flex-start;
+
+        &>li{
+
+            margin-left: 12%;
+        }
+    }
+    a:hover{
+
+        animation: links .3s forwards;
+    }
+    &__centro{
+
+        width: 15rem;
+        z-index: 1;
+
+        &__logo{
+
+            width: min-content;
+            display: block;
+            margin: auto;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 1rem .4rem .5rem black;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header{
+
+        height: 5.8rem;
+        background-color: rgba(0, 0, 0,.85);
+        border-bottom: 3px solid rgba(73, 63, 44,.85);
+
+        &__fondo{
+
+            display: none;
+
+            &__centro{
+
+                display: none;
+            }
+        }
+        nav{
+
+            justify-content: flex-end;
+
+            &>ul{
+
+                align-items:center;
+                justify-content: flex-end;
+                flex: 0 0 auto;
+
+                &>li{
+
+                    margin:0;
+
+                    &>a{
+
+                        padding: 1.3rem 0.5rem;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        &__nav-1{
+            
+            order: 2;
+        }
+        &__nav-2{
+
+            order: 3;
+            justify-content: flex-end;
+        }
+        &__centro{
+
+            flex-grow: 1;
+            order: 1;
+            width: auto;
+
+            &__logo{
+
+                font-size: 2rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 480px) {
+
+    .header{
+
+        right: auto;
+        width: auto;
+        height: auto;
+        border-right: 3px solid rgb(73, 63, 44);
+        border-radius: 0 0 .7rem 0;
+
+        nav{
+
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+
+            &>ul{
+
+                flex-direction: column;
+                align-items: stretch;
+
+                &>li{
+
+                    border-top: 1px solid gray;
+
+                    &>a{
+
+                       padding: 1rem;
+                        font-size: 2rem;  
+                    }
+                }
+            }
+        }
+
+        &__nav1+&__nav2>li{
+
+            margin: 0;
+        }
+        &__centro__logo{
+
+            margin: 0rem;
+            padding: 1rem;
+            font-size: 2.5rem;
+        }
+        &__menu{
+
+           display: block; 
+        }
+        &:hover nav{
+
+            display: flex;
+        }
+        &:hover &__menu{
+
+            display: none;
+        }
+        
+    }
+}

@@ -1,0 +1,141 @@
+.blog{
+
+    margin: 7rem auto;
+    width: 90%;
+    max-width: 1000px;
+
+    &>*{
+
+       margin-top: 3rem; 
+    }
+
+    &>.encabezado{
+
+          margin-left: 10rem;  
+    }
+    
+    &__carousel{
+
+        height: 60vh;
+        overflow: hidden;  
+
+        .carousel-inner{
+
+            height: 100%;
+        }
+
+        .carousel-item{
+
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+
+    &__articulo{
+
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__img{
+
+            width:35%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        section{
+
+            flex-basis:60%;
+
+            h2{
+
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+                font-weight: bold;
+                text-shadow: .8rem .5rem .4rem black;
+                text-align: center;
+            }
+
+            p{
+
+                margin: 1.5rem 5rem;
+                font-size: 1.5rem;
+                font-weight: normal;
+                text-shadow: .8rem .5rem .4rem black;
+                text-align: center;
+            }
+        }
+    }
+
+    
+}
+@for $i from 1 through 3 {
+    
+    #carousel-#{$i}{
+
+        background-image: url("../media/carousel_#{$i}.jpg");
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog{
+
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-radius: 0px;
+
+        &>.encabezado{
+
+            margin: 3rem auto auto;
+        }
+
+        &__carousel{
+
+            
+            height: 50vw;
+        }
+
+        &__articulo{
+
+            flex-direction: column;
+
+            &__img{
+
+                order :1;
+                width: 80%;
+                height: auto;
+            }
+
+            section{
+
+                margin-top: 2rem;
+                order :2;  
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .blog__articulo section{
+
+        h2{
+
+            font-size: 2.3rem;
+            text-shadow: .6rem .4rem .3rem black;                    
+        }
+
+        p{
+
+            font-size: 1.2rem;
+            text-shadow: .6rem .4rem .3rem black; 
+        }
+    }
+}

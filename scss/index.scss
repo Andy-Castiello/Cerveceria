@@ -1,0 +1,24 @@
+/*VARIABLES*/
+@import "./utils/variables";
+/*EXTRAS*/
+@import "./utils/extras";
+/*NORMALIZE*/
+@import "./utils/normalize";
+
+/*GLOBALS*/
+@import "./utils/globals";
+
+/*PARTIALS*/
+@import "./partials/header";
+@import "./partials/footer";
+
+/*PAGES*/
+@import "./pages/home";
+@import "./pages/catalogo";
+@import "./pages/nosotros";
+@import "./pages/contacto";
+@import "./pages/blog";
+@import "./pages/404";
+
+/*ANIMATIONS*/
+@import "./utils/animations";

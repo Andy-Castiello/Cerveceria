@@ -1,0 +1,148 @@
+.nosotros{
+
+    margin: 7rem auto 10rem;
+    width: 90%;
+    max-width: 1000px;
+
+    &>*{
+
+        margin-top: 4rem;
+    }
+    &>.encabezado{
+
+        margin-left: 10rem;
+    }
+    &__articulo{
+        
+        margin: 0;
+        span{
+
+            font-weight: bold;
+        }
+        &__section-1{
+
+            margin: 6rem 0;
+
+            &__imagen{
+
+                background-image: url("../media/nosotros_1.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 20vw;
+            }
+            &__parrafo{
+
+                margin: 0 3rem 3rem;
+
+                
+            }
+        }
+        &__section-2{
+
+            margin: 6rem 0;
+            display: flex;
+
+            &__imagen{
+
+                background-image: url("../media/nosotros_2.jpg");
+                background-size: cover;
+                background-position: center;
+                flex-grow: 1;
+                width: auto;
+                border-radius: 0 1.5rem 1.5rem 0;
+            }
+            &__parrafo{
+
+                padding: 0 3rem;
+                padding: 0 3rem;
+                min-width: 430px;
+                width: 60%;
+            }
+        }
+        &__section-3{
+
+            margin: 6rem 0;
+            display: flex;
+
+            &__imagen{
+
+                background-image: url("../media/nosotros_3.jpg");
+                background-size: cover;
+                background-position: center;
+                flex-grow: 1;
+                width: auto;
+                border-radius: 1.5rem 0 0 1.5rem;
+            }
+            &__parrafo{
+
+                padding: 0 3rem;
+                min-width: 430px;
+                width: 60%;
+            }
+        }
+        
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .nosotros{
+
+        width: 100%;
+        border-radius: 0px;
+        border-right: none;
+        border-left: none;
+
+        &>.encabezado{
+
+            margin: 4rem auto auto ;
+        }
+
+        p{
+    
+            font-size: 1.4rem;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+
+    
+
+    .nosotros__articulo{
+        
+
+        &__section-1{
+
+            &__imagen{
+
+                width: 100%;
+                height: 200px;
+                margin: 0 auto 3rem;
+            }
+        }
+        @for $i from 2 through 3 {
+            
+            &__section-#{$i}{
+
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+
+                &__imagen{
+
+                    width: 100%;                
+                    height: 200px;
+                    order: 1;
+                    border-radius: 0;
+                }
+                &__parrafo{
+    
+                    order: 2;
+                }
+            }
+        }
+        
+    }
+}
