@@ -13,7 +13,7 @@
 
         font-size: 13rem;
         font-weight: bold;
-        text-shadow: 1.2rem .8rem .5rem black;
+        text-shadow: 1.2rem .8rem .5rem $sombra;
     }
     &__parrafo{
 
@@ -21,10 +21,10 @@
     }
     &__enlace{
         
-        background-color: rgb(70, 59, 43);
-        border: 1px solid black;
+        background-color: $color-1;
+        border: 1px solid $sombra;
         border-radius: 3px;
-        box-shadow: .5rem .3rem .4rem black;
+        box-shadow: .5rem .3rem .4rem $sombra;
         width: max-content;
         padding: .4rem;
         

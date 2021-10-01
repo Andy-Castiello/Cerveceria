@@ -6,7 +6,7 @@
   width: min-content;
   font-size: 3.5rem;
   font-weight: bold;
-  text-shadow: 1.2rem .8rem .5rem black;
+  text-shadow: 1.2rem 0.8rem 0.5rem black;
   margin-left: 2rem; }
 
 /* line 9, scss/utils/_extras.scss */
@@ -21,7 +21,7 @@
   background-color: rgba(19, 18, 17, 0.97);
   background: repeating-linear-gradient(-45deg, rgba(19, 18, 17, 0.97), rgba(29, 29, 29, 0.97) 100px, rgba(19, 18, 17, 0.97) 200px);
   border-radius: 1.5rem;
-  border: 0.4rem ridge #b8b8b8; }
+  border: 0.4rem ridge #b4b4b4; }
 
 @media screen and (max-width: 768px) {
   /* line 26, scss/utils/_extras.scss */
@@ -32,7 +32,7 @@
   /* line 33, scss/utils/_extras.scss */
   .encabezado {
     font-size: 2.8rem;
-    text-shadow: 1rem .6rem .4rem black; } }
+    text-shadow: 1rem 0.6rem 0.4rem black; } }
 
 /*NORMALIZE*/
 /* line 1, scss/utils/_normalize.scss */
@@ -151,7 +151,7 @@ img, video {
   .header__menu {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: .8rem .5rem .4rem black;
+    text-shadow: 0.8rem 0.5rem 0.4rem black;
     margin: 0 1rem;
     display: none; }
   /* line 56, scss/partials/_header.scss */
@@ -171,7 +171,7 @@ img, video {
           padding: .3rem;
           font-size: 2rem;
           font-weight: bold;
-          text-shadow: .8rem .5rem .4rem black; }
+          text-shadow: 0.8rem 0.5rem 0.4rem black; }
   /* line 81, scss/partials/_header.scss */
   .header__nav-1 {
     justify-content: flex-end; }
@@ -198,14 +198,14 @@ img, video {
       margin: auto;
       font-size: 2.5rem;
       font-weight: bold;
-      text-shadow: 1rem .4rem .5rem black; }
+      text-shadow: 1rem 0.4rem 0.5rem black; }
 
 @media screen and (max-width: 768px) {
   /* line 122, scss/partials/_header.scss */
   .header {
     height: 5.8rem;
     background-color: rgba(0, 0, 0, 0.85);
-    border-bottom: 3px solid rgba(73, 63, 44, 0.85); }
+    border-bottom: 3px solid rgba(73, 63, 44, 0.75); }
     /* line 128, scss/partials/_header.scss */
     .header__fondo {
       display: none; }
@@ -302,7 +302,7 @@ img, video {
   .footer__logo {
     font-size: 2.7rem;
     font-weight: bold;
-    text-shadow: .8rem .5rem .4rem black;
+    text-shadow: 0.8rem 0.5rem 0.4rem black;
     width: min-content;
     grid-row: 1/3;
     grid-column: 1; }
@@ -317,7 +317,7 @@ img, video {
   .footer a {
     font-size: 2.1rem;
     font-weight: normal;
-    text-shadow: .8rem .5rem .4rem black; }
+    text-shadow: 0.8rem 0.5rem 0.4rem black; }
   /* line 38, scss/partials/_footer.scss */
   .footer a:hover {
     animation: links .3s forwards; }
@@ -325,7 +325,7 @@ img, video {
   .footer p {
     font-size: 1.1rem;
     font-weight: normal;
-    text-shadow: .8rem .5rem .4rem black;
+    text-shadow: 0.8rem 0.5rem 0.4rem black;
     grid-column: 1/9;
     justify-self: center; }
   /* line 50, scss/partials/_footer.scss */
@@ -416,7 +416,7 @@ img, video {
 .logo-principal {
   font-size: 6.5rem;
   font-weight: bold;
-  text-shadow: 2rem 1.5rem .5rem black;
+  text-shadow: 2rem 1.5rem 0.5rem black;
   display: inline-block;
   width: min-content;
   margin-top: 35vh;
@@ -425,7 +425,7 @@ img, video {
 @media screen and (max-width: 480px) {
   /* line 15, scss/pages/_home.scss */
   .logo-principal {
-    text-shadow: 1.1rem .7rem .4rem black;
+    text-shadow: 1.1rem 0.7rem 0.4rem black;
     font-size: 4rem; } }
 
 /* line 1, scss/pages/_catalogo.scss */
@@ -441,7 +441,7 @@ img, video {
 th {
   font-size: 1.7rem;
   font-weight: bolder;
-  text-shadow: .8rem .5rem .4rem black;
+  text-shadow: 0.8rem 0.5rem 0.4rem black;
   text-align: center;
   padding: 1.5rem; }
 
@@ -449,7 +449,7 @@ th {
 td {
   font-size: 1.3rem;
   font-weight: normal;
-  text-shadow: .8rem .5rem .4rem black;
+  text-shadow: 0.8rem 0.5rem 0.4rem black;
   text-align: center;
   padding: 1.5rem; }
 
@@ -605,14 +605,14 @@ td {
     .contacto__form label {
       font-size: 1.7rem;
       font-weight: bold;
-      text-shadow: .8rem .5rem .4rem black;
+      text-shadow: 0.8rem 0.5rem 0.4rem black;
       margin-bottom: 1rem; }
     /* line 28, scss/pages/_contacto.scss */
     .contacto__form textarea, .contacto__form input, .contacto__form select {
       background-color: #b4b4b4;
       border: 1px solid black;
       border-radius: 3px;
-      box-shadow: .5rem .3rem .4rem black;
+      box-shadow: 0.5rem 0.3rem 0.4rem black;
       padding: .7rem;
       width: 100%;
       font-family: "Vollkorn SC", serif;
@@ -660,7 +660,7 @@ td {
         margin: 0;
         font-weight: normal;
         font-size: 1.5rem;
-        text-shadow: .8rem .4rem .3rem black; }
+        text-shadow: 0.8rem 0.4rem 0.3rem black; }
       /* line 103, scss/pages/_contacto.scss */
       .contacto__form__consumidor #no {
         grid-column: 1;
@@ -672,7 +672,7 @@ td {
         margin: 0;
         font-weight: normal;
         font-size: 1.5rem;
-        text-shadow: .8rem .4rem .3rem black; }
+        text-shadow: 0.8rem 0.4rem 0.3rem black; }
     /* line 121, scss/pages/_contacto.scss */
     .contacto__form__consulta {
       grid-column: 1/3; }
@@ -683,10 +683,10 @@ td {
       justify-content: space-evenly; }
     /* line 132, scss/pages/_contacto.scss */
     .contacto__form [type="submit"], .contacto__form [type="reset"] {
-      background-color: #463b2b;
+      background-color: #493f2c;
       border: 1px solid black;
       border-radius: 3px;
-      box-shadow: .5rem .3rem .4rem black;
+      box-shadow: 0.5rem 0.3rem 0.4rem black;
       width: max-content;
       user-select: initial;
       font-family: "Vollkorn SC", serif;
@@ -719,7 +719,7 @@ td {
       width: min-content;
       font-size: 4rem;
       font-weight: bold;
-      text-shadow: 1.5rem 1.1rem .5rem black;
+      text-shadow: 1.5rem 1.1rem 0.5rem black;
       margin: 0 auto 2rem; }
 
 @media screen and (max-width: 768px) {
@@ -778,80 +778,112 @@ td {
       background-position: center; }
   /* line 38, scss/pages/_blog.scss */
   .blog__articulo {
-    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    /* line 45, scss/pages/_blog.scss */
+    /* line 44, scss/pages/_blog.scss */
     .blog__articulo__img {
       width: 35%;
-      height: auto;
-      flex-shrink: 0; }
-    /* line 51, scss/pages/_blog.scss */
+      align-self: stretch;
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center; }
+      /* line 54, scss/pages/_blog.scss */
+      .blog__articulo__img--1 {
+        background-image: url("../media/blog_1.jpg");
+        border-radius: 0 1.5rem 1.5rem 0; }
+      /* line 54, scss/pages/_blog.scss */
+      .blog__articulo__img--2 {
+        background-image: url("../media/blog_2.jpg");
+        border-radius: 1.5rem 0 0 1.5rem; }
+      /* line 54, scss/pages/_blog.scss */
+      .blog__articulo__img--3 {
+        background-image: url("../media/blog_3.jpg");
+        border-radius: 0 1.5rem 1.5rem 0; }
+      /* line 54, scss/pages/_blog.scss */
+      .blog__articulo__img--4 {
+        background-image: url("../media/blog_4.jpg");
+        border-radius: 1.5rem 0 0 1.5rem; }
+    /* line 69, scss/pages/_blog.scss */
+    .blog__articulo__video {
+      width: 35%;
+      border-radius: 1.5rem 0 0 1.5rem; }
+    /* line 75, scss/pages/_blog.scss */
+    .blog__articulo .texto-video {
+      min-width: none; }
+    /* line 79, scss/pages/_blog.scss */
     .blog__articulo section {
-      flex-basis: 60%; }
-      /* line 55, scss/pages/_blog.scss */
+      flex-basis: 60%;
+      min-width: 430px;
+      margin: 1.5rem; }
+      /* line 85, scss/pages/_blog.scss */
       .blog__articulo section h2 {
         margin-bottom: 2rem;
         font-size: 2.5rem;
         font-weight: bold;
-        text-shadow: .8rem .5rem .4rem black;
+        text-shadow: 0.8rem 0.5rem 0.4rem black;
         text-align: center; }
-      /* line 64, scss/pages/_blog.scss */
+      /* line 94, scss/pages/_blog.scss */
       .blog__articulo section p {
         margin: 1.5rem 5rem;
         font-size: 1.5rem;
         font-weight: normal;
-        text-shadow: .8rem .5rem .4rem black;
+        text-shadow: 0.8rem 0.5rem 0.4rem black;
         text-align: center; }
 
-/* line 79, scss/pages/_blog.scss */
+/* line 109, scss/pages/_blog.scss */
 #carousel-1 {
   background-image: url("../media/carousel_1.jpg"); }
 
-/* line 79, scss/pages/_blog.scss */
+/* line 109, scss/pages/_blog.scss */
 #carousel-2 {
   background-image: url("../media/carousel_2.jpg"); }
 
-/* line 79, scss/pages/_blog.scss */
+/* line 109, scss/pages/_blog.scss */
 #carousel-3 {
   background-image: url("../media/carousel_3.jpg"); }
 
 @media screen and (max-width: 768px) {
-  /* line 87, scss/pages/_blog.scss */
+  /* line 117, scss/pages/_blog.scss */
   .blog {
     width: 100%;
     border-right: none;
     border-left: none;
     border-radius: 0px; }
-    /* line 94, scss/pages/_blog.scss */
+    /* line 124, scss/pages/_blog.scss */
     .blog > .encabezado {
       margin: 3rem auto auto; }
-    /* line 99, scss/pages/_blog.scss */
+    /* line 129, scss/pages/_blog.scss */
     .blog__carousel {
       height: 50vw; }
-    /* line 105, scss/pages/_blog.scss */
+    /* line 135, scss/pages/_blog.scss */
     .blog__articulo {
       flex-direction: column; }
-      /* line 109, scss/pages/_blog.scss */
+      /* line 139, scss/pages/_blog.scss */
       .blog__articulo__img {
         order: 1;
-        width: 80%;
-        height: auto; }
-      /* line 116, scss/pages/_blog.scss */
+        width: 100%;
+        height: 50vw;
+        border-radius: 0; }
+      /* line 147, scss/pages/_blog.scss */
+      .blog__articulo__video {
+        height: auto;
+        border-radius: 0;
+        width: 100%; }
+      /* line 153, scss/pages/_blog.scss */
       .blog__articulo section {
         margin-top: 2rem;
         order: 2; } }
 
 @media screen and (max-width: 480px) {
-  /* line 129, scss/pages/_blog.scss */
+  /* line 166, scss/pages/_blog.scss */
   .blog__articulo section h2 {
     font-size: 2.3rem;
-    text-shadow: .6rem .4rem .3rem black; }
-  /* line 135, scss/pages/_blog.scss */
+    text-shadow: 0.6rem 0.4rem 0.3rem black; }
+  /* line 172, scss/pages/_blog.scss */
   .blog__articulo section p {
     font-size: 1.2rem;
-    text-shadow: .6rem .4rem .3rem black; } }
+    text-shadow: 0.6rem 0.4rem 0.3rem black; } }
 
 /* line 1, scss/pages/_404.scss */
 .main-404 {
@@ -867,16 +899,16 @@ td {
   .main-404__titulo {
     font-size: 13rem;
     font-weight: bold;
-    text-shadow: 1.2rem .8rem .5rem black; }
+    text-shadow: 1.2rem 0.8rem 0.5rem black; }
   /* line 18, scss/pages/_404.scss */
   .main-404__parrafo {
     margin-bottom: 2rem; }
   /* line 22, scss/pages/_404.scss */
   .main-404__enlace {
-    background-color: #463b2b;
+    background-color: #493f2c;
     border: 1px solid black;
     border-radius: 3px;
-    box-shadow: .5rem .3rem .4rem black;
+    box-shadow: 0.5rem 0.3rem 0.4rem black;
     width: max-content;
     padding: .4rem;
     user-select: initial;
@@ -911,4 +943,4 @@ td {
 @keyframes botones {
   100% {
     transform: scale(0.95);
-    box-shadow: .3rem .1rem .2rem black; } }
+    box-shadow: 0.3rem 0.1rem 0.2rem black; } }

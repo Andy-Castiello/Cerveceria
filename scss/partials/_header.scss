@@ -11,8 +11,8 @@
 
         height: 3.5rem;
         width: 100%;
-        background-color: rgb(0, 0, 0);
-        border-bottom: 3px solid rgb(73, 63, 44);
+        background-color: $color-fondo-header;
+        border-bottom: 3px solid $color-1;
         opacity: .85;
         position: absolute;
 
@@ -21,8 +21,8 @@
             height: 7.5rem;
             width: 15rem;
             margin:auto;    
-            background-color: rgb(0, 0, 0);
-            border-bottom: 3px solid rgb(73, 63, 44);
+            background-color: $color-fondo-header;
+            border-bottom: 3px solid $color-1;
             position: relative;
 
             &::before,&::after{
@@ -34,8 +34,8 @@
                 bottom: -0.5rem;
                 transform: rotate(45deg);
                 position:absolute;   
-                background-color: rgb(0, 0, 0);
-                border-bottom: 4px solid rgb(73, 63, 44);
+                background-color: $color-fondo-header;
+                border-bottom: 4px solid $color-1;
             }
             &::after{
 
@@ -49,7 +49,7 @@
 
         font-size: 3rem;
         font-weight: bold;
-        text-shadow: .8rem .5rem .4rem black;
+        text-shadow: .8rem .5rem .4rem $sombra;
         margin: 0 1rem;
         display: none;
     }
@@ -73,7 +73,7 @@
                     padding: .3rem;
                     font-size: 2rem;
                     font-weight: bold;
-                    text-shadow: .8rem .5rem .4rem black;
+                    text-shadow: .8rem .5rem .4rem $sombra;
                 }
             }
         }
@@ -112,7 +112,7 @@
             margin: auto;
             font-size: 2.5rem;
             font-weight: bold;
-            text-shadow: 1rem .4rem .5rem black;
+            text-shadow: 1rem .4rem .5rem $sombra;
         }
     }
 }
@@ -122,8 +122,8 @@
     .header{
 
         height: 5.8rem;
-        background-color: rgba(0, 0, 0,.85);
-        border-bottom: 3px solid rgba(73, 63, 44,.85);
+        background-color: $color-2;
+        border-bottom: 3px solid  transparentize($color-1, .25);
 
         &__fondo{
 
@@ -188,7 +188,7 @@
         right: auto;
         width: auto;
         height: auto;
-        border-right: 3px solid rgb(73, 63, 44);
+        border-right: 3px solid $color-1;
         border-radius: 0 0 .7rem 0;
 
         nav{

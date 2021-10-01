@@ -13,7 +13,7 @@ th{
 
     font-size: 1.7rem;
     font-weight: bolder;
-    text-shadow: .8rem .5rem .4rem black;
+    text-shadow: .8rem .5rem .4rem $sombra;
     text-align: center;
     padding: 1.5rem;
 }
@@ -21,7 +21,7 @@ td{
 
     font-size: 1.3rem;
     font-weight: normal;
-    text-shadow: .8rem .5rem .4rem black;
+    text-shadow: .8rem .5rem .4rem $sombra;
     text-align: center;
     padding: 1.5rem;
 }
