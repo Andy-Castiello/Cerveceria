@@ -152,7 +152,7 @@ img, video {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: .8rem .5rem .4rem black;
-    margin: 0 1rem;
+    padding: 0 1rem;
     display: none; }
   /* line 56, scss/partials/_header.scss */
   .header nav {
@@ -251,15 +251,7 @@ img, video {
     width: auto;
     height: auto;
     border-right: 3px solid #493f2c;
-    border-radius: 0 0 .7rem 0;
-    /*&:hover nav{
-
-            display: flex;
-        }
-        &:hover &__menu{
-
-            display: none;
-        }*/ }
+    border-radius: 0 0 .7rem 0; }
     /* line 194, scss/partials/_header.scss */
     .header nav {
       display: none;
@@ -286,7 +278,11 @@ img, video {
       font-size: 2.5rem; }
     /* line 228, scss/partials/_header.scss */
     .header__menu {
-      display: block; } }
+      display: block; }
+      /* line 232, scss/partials/_header.scss */
+      .header__menu:hover {
+        cursor: pointer;
+        animation: links .3s forwards; } }
 
 /* line 1, scss/partials/_footer.scss */
 .footer {

@@ -2,24 +2,20 @@ function main(){
 
     let header={
 
-        estado:{
-        
-            expandido:false
-        },
         expandir(){
 
            document.querySelector(".header>nav").style.display="flex";
-           document.getElementsByClassName("header__menu")[0].style.display="none";
-           console.log("click");
+           document.getElementsByClassName("header__menu")[0].style.backgroundColor="red";
         },
         contraer(){
 
-            document.querySelector(".header>nav").style.display="none";
-            document.getElementsByClassName("header__menu")[0].style.display="block";
-            console.log("salio");
+            document.querySelector(".header>nav").style.display="";
+            document.getElementsByClassName("header__menu")[0].style.display="";
         }
     }
     document.getElementsByClassName("header")[0].addEventListener("click",header.expandir);
     document.getElementsByClassName("header")[0].addEventListener("mouseleave",header.contraer);
 }
+
+
 window.onload= main;
