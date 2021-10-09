@@ -44,9 +44,10 @@ a:hover{
     color: $color-texto;
 }
 p{
-    font-family: "Vollkorn SC", serif;
+    font-family: "Vollkorn", serif;
+    font-style: italic;
     color: $color-texto;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: normal;
     text-shadow: .8rem .5rem .4rem black;
     text-align: center;
@@ -54,4 +55,9 @@ p{
 img,video{
 
     border-radius: 1.5rem;
+}
+span{
+
+    font-weight: bold;
+    font-family: "Vollkorn SC", serif;
 }

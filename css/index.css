@@ -1,5 +1,7 @@
 /*VARIABLES*/
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 /*EXTRAS*/
 /* line 1, scss/utils/_extras.scss */
 .encabezado {
@@ -95,16 +97,22 @@ a:hover {
 
 /* line 46, scss/utils/_globals.scss */
 p {
-  font-family: "Vollkorn SC", serif;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: normal;
   text-shadow: .8rem .5rem .4rem black;
   text-align: center; }
 
-/* line 54, scss/utils/_globals.scss */
+/* line 55, scss/utils/_globals.scss */
 img, video {
   border-radius: 1.5rem; }
+
+/* line 59, scss/utils/_globals.scss */
+span {
+  font-weight: bold;
+  font-family: "Vollkorn SC", serif; }
 
 /*PARTIALS*/
 /* line 1, scss/partials/_header.scss */
@@ -439,36 +447,40 @@ img, video {
 
 /* line 12, scss/pages/_catalogo.scss */
 th {
-  font-size: 1.7rem;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-size: 1.8rem;
   font-weight: bolder;
   text-shadow: 0.8rem 0.5rem 0.4rem black;
   text-align: center;
   padding: 1.5rem; }
 
-/* line 20, scss/pages/_catalogo.scss */
+/* line 21, scss/pages/_catalogo.scss */
 td {
-  font-size: 1.3rem;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-size: 1.6rem;
   font-weight: normal;
   text-shadow: 0.8rem 0.5rem 0.4rem black;
   text-align: center;
   padding: 1.5rem; }
 
 @media screen and (max-width: 768px) {
-  /* line 31, scss/pages/_catalogo.scss */
+  /* line 33, scss/pages/_catalogo.scss */
   .main-catalogo {
     width: 100%; }
-    /* line 35, scss/pages/_catalogo.scss */
+    /* line 37, scss/pages/_catalogo.scss */
     .main-catalogo .fondo {
       border-right: none;
       border-left: none;
       border-radius: 0px; }
-  /* line 42, scss/pages/_catalogo.scss */
+  /* line 44, scss/pages/_catalogo.scss */
   th {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     padding: .5rem 0rem; }
-  /* line 48, scss/pages/_catalogo.scss */
+  /* line 50, scss/pages/_catalogo.scss */
   td {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 1rem .5rem; } }
 
 /* line 1, scss/pages/_nosotros.scss */
@@ -548,7 +560,7 @@ td {
       margin: 4rem auto auto; }
     /* line 103, scss/pages/_nosotros.scss */
     .nosotros p {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem; } }
 
 @media screen and (max-width: 480px) {
   /* line 118, scss/pages/_nosotros.scss */
@@ -826,7 +838,7 @@ td {
       /* line 94, scss/pages/_blog.scss */
       .blog__articulo section p {
         margin: 1.5rem 5rem;
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         font-weight: normal;
         text-shadow: 0.8rem 0.5rem 0.4rem black;
         text-align: center; }
@@ -882,7 +894,7 @@ td {
     text-shadow: 0.6rem 0.4rem 0.3rem black; }
   /* line 172, scss/pages/_blog.scss */
   .blog__articulo section p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-shadow: 0.6rem 0.4rem 0.3rem black; } }
 
 /* line 1, scss/pages/_404.scss */
