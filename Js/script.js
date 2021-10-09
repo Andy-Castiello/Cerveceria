@@ -5,7 +5,7 @@ function main(){
         expandir(){
 
            document.querySelector(".header>nav").style.display="flex";
-           document.getElementsByClassName("header__menu")[0].style.backgroundColor="red";
+           document.getElementsByClassName("header__menu")[0].style.display="none";
         },
         contraer(){
 
