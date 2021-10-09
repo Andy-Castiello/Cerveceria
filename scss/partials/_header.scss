@@ -50,7 +50,7 @@
         font-size: 3rem;
         font-weight: bold;
         text-shadow: .8rem .5rem .4rem $sombra;
-        margin: 0 1rem;
+        padding: 0 1rem;
         display: none;
     }
     nav{
@@ -228,14 +228,12 @@
         &__menu{
 
            display: block; 
-        }
-        &:hover nav{
+           
+           &:hover{
 
-            display: flex;
-        }
-        &:hover &__menu{
-
-            display: none;
+                cursor: pointer;
+                animation: links .3s forwards;
+           }
         }
         
     }

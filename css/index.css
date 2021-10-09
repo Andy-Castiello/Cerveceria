@@ -160,7 +160,7 @@ span {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0.8rem 0.5rem 0.4rem black;
-    margin: 0 1rem;
+    padding: 0 1rem;
     display: none; }
   /* line 56, scss/partials/_header.scss */
   .header nav {
@@ -287,12 +287,10 @@ span {
     /* line 228, scss/partials/_header.scss */
     .header__menu {
       display: block; }
-    /* line 232, scss/partials/_header.scss */
-    .header:hover nav {
-      display: flex; }
-    /* line 236, scss/partials/_header.scss */
-    .header:hover .header__menu {
-      display: none; } }
+      /* line 232, scss/partials/_header.scss */
+      .header__menu:hover {
+        cursor: pointer;
+        animation: links .3s forwards; } }
 
 /* line 1, scss/partials/_footer.scss */
 .footer {
