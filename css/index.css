@@ -1,6 +1,5 @@
 /*VARIABLES*/
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 /*EXTRAS*/
 /* line 1, scss/utils/_extras.scss */
@@ -54,7 +53,7 @@ html {
 /* line 8, scss/utils/_globals.scss */
 body {
   /*Agrega imagen de fondo al body*/
-  background-image: url(../media/fondo.jpg);
+  background-image: url(../media/fondo.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -503,7 +502,7 @@ td {
       margin: 6rem 0; }
       /* line 26, scss/pages/_nosotros.scss */
       .nosotros__articulo__section-1__imagen {
-        background-image: url("../media/nosotros_1.jpg");
+        background-image: url("../media/nosotros_1.webp");
         background-size: cover;
         background-position: center;
         height: 20vw; }
@@ -516,7 +515,7 @@ td {
       display: flex; }
       /* line 45, scss/pages/_nosotros.scss */
       .nosotros__articulo__section-2__imagen {
-        background-image: url("../media/nosotros_2.jpg");
+        background-image: url("../media/nosotros_2.webp");
         background-size: cover;
         background-position: center;
         flex-grow: 1;
@@ -534,7 +533,7 @@ td {
       display: flex; }
       /* line 67, scss/pages/_nosotros.scss */
       .nosotros__articulo__section-3__imagen {
-        background-image: url("../media/nosotros_3.jpg");
+        background-image: url("../media/nosotros_3.webp");
         background-size: cover;
         background-position: center;
         flex-grow: 1;
@@ -800,19 +799,19 @@ td {
       background-position: center; }
       /* line 54, scss/pages/_blog.scss */
       .blog__articulo__img--1 {
-        background-image: url("../media/blog_1.jpg");
+        background-image: url("../media/blog_1.webp");
         border-radius: 0 1.5rem 1.5rem 0; }
       /* line 54, scss/pages/_blog.scss */
       .blog__articulo__img--2 {
-        background-image: url("../media/blog_2.jpg");
+        background-image: url("../media/blog_2.webp");
         border-radius: 1.5rem 0 0 1.5rem; }
       /* line 54, scss/pages/_blog.scss */
       .blog__articulo__img--3 {
-        background-image: url("../media/blog_3.jpg");
+        background-image: url("../media/blog_3.webp");
         border-radius: 0 1.5rem 1.5rem 0; }
       /* line 54, scss/pages/_blog.scss */
       .blog__articulo__img--4 {
-        background-image: url("../media/blog_4.jpg");
+        background-image: url("../media/blog_4.webp");
         border-radius: 1.5rem 0 0 1.5rem; }
     /* line 69, scss/pages/_blog.scss */
     .blog__articulo__video {
@@ -843,15 +842,15 @@ td {
 
 /* line 109, scss/pages/_blog.scss */
 #carousel-1 {
-  background-image: url("../media/carousel_1.jpg"); }
+  background-image: url("../media/carousel_1.webp"); }
 
 /* line 109, scss/pages/_blog.scss */
 #carousel-2 {
-  background-image: url("../media/carousel_2.jpg"); }
+  background-image: url("../media/carousel_2.webp"); }
 
 /* line 109, scss/pages/_blog.scss */
 #carousel-3 {
-  background-image: url("../media/carousel_3.jpg"); }
+  background-image: url("../media/carousel_3.webp"); }
 
 @media screen and (max-width: 768px) {
   /* line 117, scss/pages/_blog.scss */
