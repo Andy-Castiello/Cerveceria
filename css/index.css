@@ -615,8 +615,9 @@ td {
       font-size: 1.7rem;
       font-weight: bold;
       text-shadow: 0.8rem 0.5rem 0.4rem black;
-      margin-bottom: 1rem; }
-    /* line 28, scss/pages/_contacto.scss */
+      margin-bottom: 1rem;
+      display: block; }
+    /* line 29, scss/pages/_contacto.scss */
     .contacto__form textarea, .contacto__form input, .contacto__form select {
       background-color: #b4b4b4;
       border: 1px solid black;
@@ -628,41 +629,41 @@ td {
       color: black;
       font-size: 1.4rem;
       font-weight: normal; }
-    /* line 43, scss/pages/_contacto.scss */
+    /* line 44, scss/pages/_contacto.scss */
     .contacto__form textarea {
       width: 100%;
       height: 10rem;
       resize: none; }
-    /* line 51, scss/pages/_contacto.scss */
+    /* line 52, scss/pages/_contacto.scss */
     .contacto__form__telefono {
       display: grid;
       grid-template-columns: auto 1fr; }
-      /* line 56, scss/pages/_contacto.scss */
+      /* line 57, scss/pages/_contacto.scss */
       .contacto__form__telefono label {
         grid-column: 1/3;
         grid-row: 1; }
-      /* line 61, scss/pages/_contacto.scss */
+      /* line 62, scss/pages/_contacto.scss */
       .contacto__form__telefono select {
         grid-column: 1;
         grid-row: 2; }
-      /* line 67, scss/pages/_contacto.scss */
+      /* line 68, scss/pages/_contacto.scss */
       .contacto__form__telefono input {
         grid-column: 2;
         grid-row: 2; }
-    /* line 74, scss/pages/_contacto.scss */
+    /* line 75, scss/pages/_contacto.scss */
     .contacto__form__consumidor {
       display: grid;
       grid-template-columns: auto 1fr;
       column-gap: 1rem; }
-      /* line 80, scss/pages/_contacto.scss */
+      /* line 81, scss/pages/_contacto.scss */
       .contacto__form__consumidor__titulo {
         grid-column: 1/3;
         grid-row: 1; }
-      /* line 87, scss/pages/_contacto.scss */
+      /* line 88, scss/pages/_contacto.scss */
       .contacto__form__consumidor #si {
         grid-column: 1;
         grid-row: 2; }
-      /* line 93, scss/pages/_contacto.scss */
+      /* line 94, scss/pages/_contacto.scss */
       .contacto__form__consumidor [for="si"] {
         grid-column: 2;
         grid-row: 2;
@@ -670,11 +671,11 @@ td {
         font-weight: normal;
         font-size: 1.5rem;
         text-shadow: 0.8rem 0.4rem 0.3rem black; }
-      /* line 103, scss/pages/_contacto.scss */
+      /* line 104, scss/pages/_contacto.scss */
       .contacto__form__consumidor #no {
         grid-column: 1;
         grid-row: 3; }
-      /* line 109, scss/pages/_contacto.scss */
+      /* line 110, scss/pages/_contacto.scss */
       .contacto__form__consumidor [for="no"] {
         grid-column: 2;
         grid-row: 3;
@@ -682,15 +683,15 @@ td {
         font-weight: normal;
         font-size: 1.5rem;
         text-shadow: 0.8rem 0.4rem 0.3rem black; }
-    /* line 121, scss/pages/_contacto.scss */
+    /* line 122, scss/pages/_contacto.scss */
     .contacto__form__consulta {
       grid-column: 1/3; }
-    /* line 126, scss/pages/_contacto.scss */
+    /* line 127, scss/pages/_contacto.scss */
     .contacto__form__botones {
       grid-column: 1/3;
       display: flex;
       justify-content: space-evenly; }
-    /* line 132, scss/pages/_contacto.scss */
+    /* line 133, scss/pages/_contacto.scss */
     .contacto__form [type="submit"], .contacto__form [type="reset"] {
       background-color: #493f2c;
       border: 1px solid black;
@@ -702,28 +703,28 @@ td {
       color: white;
       font-size: 1.3rem;
       font-weight: normal; }
-      /* line 147, scss/pages/_contacto.scss */
+      /* line 148, scss/pages/_contacto.scss */
       .contacto__form [type="submit"]:hover, .contacto__form [type="reset"]:hover {
         cursor: pointer;
         animation: botones .3s forwards; }
-  /* line 154, scss/pages/_contacto.scss */
+  /* line 155, scss/pages/_contacto.scss */
   .contacto__separador {
     flex: 0 0 .2rem;
     background: linear-gradient(rgba(255, 255, 255, 0), white 50%, rgba(255, 255, 255, 0));
     width: .2rem;
     margin: 0 3rem;
     align-self: stretch; }
-  /* line 163, scss/pages/_contacto.scss */
+  /* line 164, scss/pages/_contacto.scss */
   .contacto__cartel {
     flex: 0 0 40%;
     padding: 1rem; }
-    /* line 168, scss/pages/_contacto.scss */
+    /* line 169, scss/pages/_contacto.scss */
     .contacto__cartel > * {
       margin-bottom: 2rem; }
-    /* line 173, scss/pages/_contacto.scss */
+    /* line 174, scss/pages/_contacto.scss */
     .contacto__cartel p {
       margin: 1rem 3rem; }
-    /* line 178, scss/pages/_contacto.scss */
+    /* line 179, scss/pages/_contacto.scss */
     .contacto__cartel__logo {
       width: min-content;
       font-size: 4rem;
@@ -732,21 +733,21 @@ td {
       margin: 0 auto 2rem; }
 
 @media screen and (max-width: 768px) {
-  /* line 196, scss/pages/_contacto.scss */
+  /* line 197, scss/pages/_contacto.scss */
   .contacto {
     flex-direction: column-reverse;
     width: 100%;
     border-right: none;
     border-left: none;
     border-radius: 0; }
-    /* line 204, scss/pages/_contacto.scss */
+    /* line 205, scss/pages/_contacto.scss */
     .contacto__separador {
       flex: 0 0 .2rem;
       background: linear-gradient(90deg, rgba(255, 255, 255, 0), white 50%, rgba(255, 255, 255, 0));
       height: .2rem;
       width: auto;
       margin: 3rem 0; }
-    /* line 213, scss/pages/_contacto.scss */
+    /* line 214, scss/pages/_contacto.scss */
     .contacto__cartel {
       margin: 10vh auto 20vh;
       padding: 1rem;
@@ -754,7 +755,7 @@ td {
       height: 80vh; } }
 
 @media screen and (max-width: 480px) {
-  /* line 225, scss/pages/_contacto.scss */
+  /* line 226, scss/pages/_contacto.scss */
   .contacto__form {
     display: flex;
     flex-direction: column;

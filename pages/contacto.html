@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,9 @@
     <title>Contacto | Dark Brewery</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="../media/icono.ico">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../Js/script.js"></script>
+    
 </head>
 <body>
     <header class="header"><!--Inicio Header-->
@@ -36,15 +37,15 @@
         <section class="fondo contacto">
             <form class="contacto__form" action="index.html" method="POST">
                 <section>
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Nombre" name="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Nombre" name="nombre">
                 </section>
                 <section>                   
-                    <label>Correo:</label>
-                    <input type="email" placeholder="correo@correo.com" name="email">
+                    <label for="correo">Correo:</label>
+                    <input id="correo" type="email" placeholder="correo@correo.com" name="email">
                 </section>   
                 <section class="contacto__form__telefono">
-                    <label>Teléfono:</label>
+                    <label for="telefono">Teléfono:</label>
                     <select name="area" id="area">
                         <option value="54">+54</option>
                         <option value="591">+591</option>
@@ -61,7 +62,7 @@
                         <option value="598">+598</option>
                         <option value="58">+58</option>
                     </select>
-                    <input type="tel" name="telefono">
+                    <input id="telefono" type="tel" name="telefono">
                 </section>   
                 <section class="contacto__form__consumidor">
                     <label class="contacto__form__consumidor__titulo">Consumidor final:</label>
@@ -71,8 +72,8 @@
                     <label for="no">No</label>
                 </section>   
                 <section class="contacto__form__consulta">
-                    <label>Consulta:</label>
-                    <textarea name="consulta"cols="30" rows="10"></textarea><br>
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta"cols="30" rows="10"></textarea><br>
                 </section>
                 <section class="contacto__form__botones">
                     <input type="submit" value="Enviar">
@@ -98,5 +99,6 @@
         <div class="separador-h"></div>
         <p>© Todos los derechos reservados.</p>
     </footer><!--Fin Footer-->
+    <script src="../Js/script.js"></script>
 </body>
 </html>
