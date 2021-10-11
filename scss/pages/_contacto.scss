@@ -41,6 +41,7 @@
             font-weight: normal;
         
         }
+        
         textarea{
 
             width: 100%;
@@ -89,7 +90,7 @@
 
                 grid-column: 1;
                 grid-row: 2;
-                
+                width: auto;
             }
             [for="si"]{ 
             
@@ -105,7 +106,7 @@
             
                 grid-column: 1;
                 grid-row: 3;
-                
+                width: auto;
             }
             [for="no"]{ 
             
